@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Ejemplo</title>
+</head>
+<body class="body" >
+    <nav  class="navbar navbar-expand-lg navbar-light" style="background-color: #06141d60;">
+        <div class="container-fluid">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <button class="btn btn-outline-info" type="submit" onClick="limpiarterminal();">Nuevo</button>
+                <input class="btn btn-outline-info" type="file" id="file-input" />
+                <button class="btn btn-outline-info" type="submit">Guardar</button>
+                
+            </ul>
+          </div>
+    </nav >
+    <div class="col-auto">
+        <h1>Ejemplo Compiladores 1 </h1>
+        
+        <div >
+            <div class="form-floating">
+                <textarea class="editor" rows="10" cols="40" placeholder="codigo..." id="floatingTextarea2" style="height: 300px"></textarea>
+            </div>
+        </div>
+
+        <div class="row justify-content-end">
+            <div class="col-3">
+                <button class="btn btn-outline-warning btn-lg" onclick="compilar()">Compilar</button>
+            </div>
+        </div>
+        <br>
+
+        <div class="consola">
+            <div class="form-floating">
+                <textarea class="console" id="consola" >consola...</textarea>
+            </div>
+        </div> 
+    </div>
+    <script src="funcionalidad.js"></script>
+</body>
+</html>
